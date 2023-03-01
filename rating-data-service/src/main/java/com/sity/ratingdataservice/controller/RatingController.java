@@ -20,7 +20,7 @@ public class RatingController {
     }
 
     @GetMapping("/users/{userId}")
-    public UserRating getUserRating(@PathVariable("userOd") String userId){
+    public UserRating getUserRating(@PathVariable("userId") String userId){
         List<Rating> ratings = Arrays.asList(
                 new Rating("1234", 4),
                 new Rating("5678",3)
